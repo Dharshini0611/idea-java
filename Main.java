@@ -1,17 +1,18 @@
-import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        sum();
-    }
-    static void sum(){
-        Scanner in =new Scanner(System.in);
-        System.out.print("enter the num1:");
-        int a=in.nextInt();
-        System.out.print("enter the num2:");
-        int b=in.nextInt();
-        int sum=a+b;
-        System.out.println(sum);
-    }
+        int n=13839;
+        int count=0;
+        while(n>0){
+           int rem=n%10;// last digit
+           if(rem==3){
+               count++;
+           }
+           n=n/10;}// to remove the last digit
+                System.out.println(count);
+            }
 
 
-}
+
+
+    }
